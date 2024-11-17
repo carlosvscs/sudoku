@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <!-- Tela inicial do jogo -->
+
     <div id="start-screen">
         <h1 id="game-title">SUDOKU</h1>
         <button id="start-button" onclick="startGame()">PLAY</button>
     </div>
 
-    <!-- Tela do jogo -->
     <div id="game-container" style="display:none;">
         <h1></h1>
         <div id="sudoku-board"></div>
+        
         <div id="number-list">
             <div class="number" id="number-1">1</div>
             <div class="number" id="number-2">2</div>
@@ -28,9 +28,9 @@
             <div class="number" id="number-8">8</div>
             <div class="number" id="number-9">9</div>
         </div>
-        <p id="error-count" style="display:none;">0/3</p> <!-- Inicialmente escondido -->
+        
+        <p id="error-count" style="display:none;">0/3</p>
 
-        <!-- Botão de reset -->
         <button id="reset-button" onclick="resetGame()">RESET</button>
     </div>
 
