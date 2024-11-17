@@ -1,51 +1,45 @@
-/* Reset básico de margens e paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e0f7ff;  /* Fundo da página em azul claro */
+    background-color: #e0f7ff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    color: #003366;  /* Cor do texto em azul escuro */
+    color: #003366;
 }
 
-/* Cabeçalho */
 h1 {
-    color: #003366;  /* Título em azul escuro */
+    color: #003366;
     margin-bottom: 20px;
     font-size: 3rem;
     text-align: center;
 }
 
-/* Container do jogo */
 #game-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-/* Tabuleiro de Sudoku */
 #sudoku-board {
     display: grid;
     grid-template-columns: repeat(9, 50px);
     grid-template-rows: repeat(9, 50px);
     gap: 2px;
-    background-color: #003366;  /* Fundo do tabuleiro em azul escuro */
+    background-color: #003366;
     border-radius: 10px;
     padding: 2px;
-    margin-right: 20px;  /* Espaço entre o tabuleiro e a lista de números */
-    border: 4px solid #003366;  /* Borda ao redor do tabuleiro */
+    margin-right: 20px;
+    border: 4px solid #003366;
 }
 
-/* Células em azul claro */
 input {
     width: 50px;
     height: 50px;
@@ -55,30 +49,26 @@ input {
     color: #003366;
     font-weight: bold;
     border-radius: 5px;
-    background-color: #cceeff; /* Azul claro para todas as células */
+    background-color: #cceeff;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-/* Células desabilitadas (valores fixos) */
 input[disabled] {
-    background-color: #99ccff;  /* Azul claro mais escuro para células fixas */
+    background-color: #99ccff;
     color: #003366;
 }
 
-/* Feedback visual para erros */
 input.error {
-    background-color: #ffcccc;  /* Vermelho claro para erros */
+    background-color: #ffcccc;
     border-color: #ff3333;
 }
 
-/* Contador de erros */
 p {
     font-size: 1.2rem;
     margin-top: 10px;
     color: #003366;
 }
 
-/* Botões */
 button {
     background-color: #007bff;
     color: white;
@@ -95,7 +85,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Alerta de erro quando o contador de erros chega a 3 */
 .game-over {
     color: #ff4d4d;
     font-size: 1.5rem;
@@ -104,7 +93,6 @@ button:hover {
     margin-top: 20px;
 }
 
-/* Estilo para a lista de números */
 #number-list {
     display: flex;
     flex-direction: column;
@@ -129,26 +117,6 @@ button:hover {
     visibility: hidden;
 }
 
-/* Reset básico de margens e paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corpo */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e0f7ff;  /* Fundo da página em azul claro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    color: #003366;  /* Cor do texto em azul escuro */
-}
-
-/* Tela inicial */
 #start-screen {
     text-align: center;
 }
@@ -157,13 +125,7 @@ body {
     font-size: 4rem;
     font-weight: bold;
     color: #003366;
-    text-shadow: 2px 2px 5px rgba(0, 51, 102, 0.7);  /* Efeito de sombra */
-}
-
-#game-description {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    color: #003366;
+    text-shadow: 2px 2px 5px rgba(0, 51, 102, 0.7);
 }
 
 #start-button {
@@ -182,7 +144,6 @@ body {
     background-color: #0056b3;
 }
 
-/* O restante do estilo do jogo continua igual, com exceção de tornar o game-container oculto inicialmente */
 #game-container {
     display: none;
     justify-content: center;
@@ -190,5 +151,3 @@ body {
     text-align: center;
     margin-top: 30px;
 }
-
-/* Resto do estilo permanece igual... */
