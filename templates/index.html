@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Sudoku Educativo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Tela inicial do jogo -->
+    <div id="start-screen">
+        <h1 id="game-title">SUDOKU</h1>
+        <button id="start-button" onclick="startGame()">PLAY</button>
+    </div>
+
+    <!-- Tela do jogo -->
+    <div id="game-container" style="display:none;">
+        <h1></h1>
+        <div id="sudoku-board"></div>
+        <div id="number-list">
+            <div class="number" id="number-1">1</div>
+            <div class="number" id="number-2">2</div>
+            <div class="number" id="number-3">3</div>
+            <div class="number" id="number-4">4</div>
+            <div class="number" id="number-5">5</div>
+            <div class="number" id="number-6">6</div>
+            <div class="number" id="number-7">7</div>
+            <div class="number" id="number-8">8</div>
+            <div class="number" id="number-9">9</div>
+        </div>
+        <p id="error-count" style="display:none;">0/3</p> <!-- Inicialmente escondido -->
+
+        <!-- Botão de reset -->
+        <button id="reset-button" onclick="resetGame()">RESET</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
